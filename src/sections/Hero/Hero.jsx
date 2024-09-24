@@ -1,11 +1,22 @@
-import React from 'react'
-
+import React from "react";
+import styles from "./HeroStyles.module.css";
+import heroImg from "../../assets/hero-img.png";
+import themeIcon from "../../assets/sun.svg"
 function Hero() {
   return (
-    <div>
-      
-    </div>
-  )
+    <section id="hero">
+      <div className={styles.colorModeContainer}>
+        {" "}
+        //colorModeContainer is for dark mode and light mode
+        <img
+          className={styles.hero}
+          src={heroImg}
+          alt="Profile picture of Vijay"
+        />
+        <img src={themeIcon} alt="Color mode icon" />
+      </div>
+    </section>
+  );
 }
 
-export default Hero
+export default Hero;
