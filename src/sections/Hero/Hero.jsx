@@ -3,8 +3,9 @@ import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-img.png";
 import themeIcon from "../../assets/sun.svg";
 import twitterIcon from "../../assets/twitter-light.svg";
-import githubIcon from "../../assets/linkedin-light.svg"
-import LinkedInIcon from "../../assets/github-light.svg"
+import githubIcon from "../../assets/linkedin-light.svg";
+import LinkedInIcon from "../../assets/github-light.svg";
+import CV from "../../assets/cv.pdf"
 
 function Hero() {
   return (
@@ -39,8 +40,18 @@ function Hero() {
           <a href="https://LinkedIn.com">
             <img src={LinkedInIcon} alt="X Icon" />
           </a>
-
         </span>
+
+        <p>
+          Recent Computer Science Graduate | Future-Focused Software Engineer |
+          Skilled in Python, Java, C++ and Full-Stack Development | | Seeking
+          Entry-Level Roles
+        </p>
+        <a href={CV}>
+            <button className="hover" download >
+                Resume
+            </button>
+        </a>
       </div>
     </section>
   );
