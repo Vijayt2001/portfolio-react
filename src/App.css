@@ -14,7 +14,7 @@
   --btn-color: #ffffff;
   --btn-text-color: rgb(255, 255, 255);
   --project-card-bg: black;
-  --text-color: black;
+  --text-color: rgb(255, 255, 255);
   --form-text-color: rgb(241, 237, 237);
   --footer-text-color: rgb(240, 231, 231);
 }
@@ -26,3 +26,47 @@ body{
   justify-content: center;
   margin: 0 auto 60px;
 }
+
+#root{
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+h1,h2,h3, p{
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+
+}
+h2,h3,p{
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2{
+  text-transform: uppercase;
+}
+
+h2,h3{
+  font-size: 20px;
+}
+
+h1{
+  font-family: 'Rubik', sans-serif;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.sectionTitle{
+  margin-bottom: 30px;
+}
+
+.hover{
+  cursor: pointer;
+}
+
+
