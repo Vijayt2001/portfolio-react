@@ -3,40 +3,36 @@ import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-img.png";
 import sun from "../../assets/sun.svg";
 import twitterLight from "../../assets/twitter-light.svg";
-import twitterDark from "../../assets/twitter-dark.svg"
+import twitterDark from "../../assets/twitter-dark.svg";
 import githubLight from "../../assets/github-light.svg";
-import githubDark from "../../assets/github-dark.svg"
+import githubDark from "../../assets/github-dark.svg";
 import LinkedInLight from "../../assets/linkedin-light.svg";
-import LinkedInDark from "../../assets/linkedin-dark.svg"
-import CV from "../../assets/cv.pdf"
+import LinkedInDark from "../../assets/linkedin-dark.svg";
+import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
-import moon from '../../assets/moon.svg'
+import moon from "../../assets/moon.svg";
 
 function Hero() {
+  const { theme, toggleTheme } = useTheme();
 
-    const {theme, toggleTheme} = useTheme();
-
-    const themeIcon = theme === 'light' ? sun : moon;
-    const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
-    const githubIcon = theme === 'light' ? githubLight : githubDark;
-    const LinkedInIcon = theme === 'light' ? LinkedInLight : LinkedInDark;
-
-
+  const themeIcon = theme === "light" ? sun : moon;
+  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
+  const githubIcon = theme === "light" ? githubLight : githubDark;
+  const LinkedInIcon = theme === "light" ? LinkedInLight : LinkedInDark;
 
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
-        
         {/* colorModeContainer is for dark mode and light mode */}
         <img
           className={styles.hero}
           src={heroImg}
           alt="Profile picture of Vijay"
         />
-        <img src={themeIcon} alt="Color mode icon" 
-        onClick={toggleTheme}
-        />
-        
+        <img className= {styles.colorMode}
+        src={themeIcon} 
+        alt="Color mode icon" 
+        onClick={toggleTheme} />
       </div>
 
       <div className={styles.info}>
@@ -66,9 +62,9 @@ function Hero() {
           Entry-Level Roles
         </p>
         <a href={CV}>
-            <button className="hover" download >
-                Resume
-            </button>
+          <button className="hover" download>
+            Resume
+          </button>
         </a>
       </div>
     </section>
