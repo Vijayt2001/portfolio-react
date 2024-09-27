@@ -12,7 +12,7 @@
 [data-theme = 'dark']{
   --background-color: rgb(36, 34, 34);
   --btn-color: #ffffff;
-  --btn-text-color: rgb(255, 255, 255);
+  --btn-text-color: rgb(0, 0, 0);
   --project-card-bg: black;
   --text-color: rgb(255, 255, 255);
   --form-text-color: rgb(241, 237, 237);

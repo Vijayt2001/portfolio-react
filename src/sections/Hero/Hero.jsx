@@ -60,7 +60,7 @@ function Hero() {
           </a>
         </span>
 
-        <p>
+        <p className={styles.description}>
           Recent Computer Science Graduate | Future-Focused Software Engineer |
           Skilled in Python, Java, C++ and Full-Stack Development | | Seeking
           Entry-Level Roles
