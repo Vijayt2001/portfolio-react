@@ -1,13 +1,13 @@
 import React from 'react'
 
-function ProjectCard({src}) {
+function ProjectCard({src, link, h3, p}) {
   return (
-    <a href="https://github.com/Vijayt2001/2D-Tank-War-Game" target='blank'>
-    <img className='hover' src={src} alt='project logo'/>
-    <h3>SFSU Social Media</h3>
-    <p>Social Media Website</p>
+    <a href={link} target='_blank'>
+    <img className='hover' src={src} alt={'${h3}logo'}/>
+    <h3>{h3}</h3>
+    <p>{p}</p>
     </a>
   )
 }
 
-export default ProjectCard
+export default ProjectCard;
