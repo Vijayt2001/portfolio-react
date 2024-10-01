@@ -25,7 +25,7 @@ function Projects() {
         <ProjectCard
           src={viberr}
           link="https://github.com/Vijayt2001/2D-Tank-War-Game"
-          h3="Vbiberr"
+          h3="Viberr"
           p="Social Media APP"
         />
       </div>
