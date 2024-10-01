@@ -1,14 +1,19 @@
-import React from 'react'
+import styles from './SkillsStyles.Module.css'
+import checkMarksIcon from "../../assets/checkmark-light.svg"
+import checkMarksIcon from "../../assets/checkmark-dark.svg"
+
 
 function Skills() {
   return (
-    <section id='skills' className={styles.container}>
+    <section id="skills" className={styles.container}>
         
         <h1>Skills</h1>
-        
-        </section>
+        <div className={styles.skillList}>
+            <skillList src={checkMarksIcon} skill = "HTML" />
 
-  )
+        </div>
+        </section>
+  );
 }
 
-export default Skills
+export default Skills;
