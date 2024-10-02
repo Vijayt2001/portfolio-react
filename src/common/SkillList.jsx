@@ -1,11 +1,11 @@
 
-function SkillList() {
-  return (
-    <span>
-    <img src={checkMarksIcon} alt="checkMarkIcon" />
-    <p>HTML</p>
-    </span>
-  )
-}
-
-export default SkillList
+function SkillList({src, skill}) {
+    return (
+      <span>
+      <img src={src} alt="checkMarkIcon" />
+      <p>{skill}</p>
+      </span>
+    )
+  }
+  
+  export default SkillList

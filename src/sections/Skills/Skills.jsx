@@ -1,19 +1,43 @@
-import styles from './SkillsStyles.Module.css'
-import checkMarksIcon from "../../assets/checkmark-light.svg"
-// import checkMarksIcon from "../../assets/checkmark-dark.svg"
-import SkillList from '../../common/SkillList'
-
+import styles from "./SkillsStyles.module.css";
+import checkMarkIcon from "../../assets/checkmark-dark.svg";
+import SkillList from "../../common/SkillList";
 
 function Skills() {
   return (
     <section id="skills" className={styles.container}>
-        
-        <h1>Skills</h1>
-        <div className={styles.SkillList}>
-            <skillList src={checkMarksIcon} skill = "HTML" />
+      <h1>Skills</h1>
+      <div className={styles.skillList}>
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+        <SkillList src={checkMarkIcon} skill={"CSS"} />
+        <SkillList src={checkMarkIcon} skill={"JavaScript"} />
+        <SkillList src={checkMarkIcon} skill={"TypeScript"} />
+        <SkillList src={checkMarkIcon} skill={"Node"} />
 
-        </div>
-        </section>
+      </div>
+
+      <hr />
+
+      <div className={styles.skillList}>
+        <SkillList src={checkMarkIcon} skill={"React"} />
+        <SkillList src={checkMarkIcon} skill={"PHP"} />
+        <SkillList src={checkMarkIcon} skill={"Tailwind CSS"} />
+        <SkillList src={checkMarkIcon} skill={"Angular"} />
+
+      </div>
+      <hr />
+
+      <div className={styles.skillList}>
+        <SkillList src={checkMarkIcon} skill={"Git"} />
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+        <SkillList src={checkMarkIcon} skill={"HTML"} />
+      </div>
+
+    </section>
   );
 }
 
