@@ -1,11 +1,9 @@
-import React from "react";
-import styles from "./ContactStyles.module.css";
+import styles from './ContactStyles.module.css';
 
 function Contact() {
   return (
-    <section id="contact" className={StyleSheet.container}>
+    <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-
       <form action="">
         <div className="formGroup">
           <label htmlFor="name" hidden>
@@ -19,7 +17,6 @@ function Contact() {
             required
           />
         </div>
-
         <div className="formGroup">
           <label htmlFor="email" hidden>
             Email
@@ -32,7 +29,6 @@ function Contact() {
             required
           />
         </div>
-
         <div className="formGroup">
           <label htmlFor="message" hidden>
             Message
@@ -41,13 +37,9 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Message"
-            required ></textarea>
-          
+            required></textarea>
         </div>
-        <input className="hover btn" type="submit" 
-        value="submit"
-        />
-        
+        <input className="hover btn" type="submit" value="Submit" />
       </form>
     </section>
   );
