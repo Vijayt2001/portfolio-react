@@ -6,7 +6,9 @@ function Footer() {
 
     <section id='footer' className={styles.container}>
 
-        <p>©</p>
+        <p>© 2024 Vijayraj Tolnoorkar <br />
+        All rights reserved.
+        </p>
 
     </section>
   )
